@@ -28,6 +28,36 @@
   color: #61dafb;
 }
 
+body {
+  background-color: #282c34;
+}
+
+.completed-todo {
+  text-decoration: line-through;
+}
+
+.button {
+  padding: 5px 6px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #2421da;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px #999;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

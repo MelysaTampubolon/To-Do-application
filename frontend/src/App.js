@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Modal from "./components/Modal";
 import axios from "axios";
+import './App.css';
+
 
 class App extends Component {
   constructor(props) {
@@ -75,13 +77,13 @@ class App extends Component {
       <div className="nav nav-tabs">
         <span
           onClick={() => this.displayCompleted(true)}
-          className={this.state.viewCompleted ? "nav-link active" : "nav-link"}
+          className={this.state.viewCompleted ? "btn btn-outline-dark btn-sm active" : "btn btn-outline-dark mr-3"}
         >
           Complete
         </span>
         <span
           onClick={() => this.displayCompleted(false)}
-          className={this.state.viewCompleted ? "nav-link" : "nav-link active"}
+          className={this.state.viewCompleted ? "btn btn-outline-dark btn-sm ml-3" : "btn btn-outline-dark active"}
         >
           Incomplete
         </span>
@@ -129,13 +131,13 @@ class App extends Component {
   render() {
     return (
       <main className="container">
-        <h1 className="text-white text-uppercase text-center my-4">Todo app</h1>
+        <h1 className="text-white text-uppercase text-center my-4">Todo App</h1>
         <div className="row">
           <div className="col-md-6 col-sm-10 mx-auto p-0">
             <div className="card p-3">
               <div className="mb-4">
                 <button
-                  className="btn btn-primary"
+                  className="button"
                   onClick={this.createItem}
                 >
                   Add task
